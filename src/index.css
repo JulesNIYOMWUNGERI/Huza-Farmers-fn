@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --black-gradient: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+  --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+.text-gradient {
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #01f362 0.89%,
+    #32fa00 17.23%,
+    #00ff08 42.04%,
+    #102e2f 55.12%,
+    #132e2f 71.54%,
+    #0b2327 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.bg-green-gradient {
+  background: linear-gradient(
+    157.81deg,
+    #def9fa -43.27%,
+    #bef3f5 -21.24%,
+    #9dedf0 12.19%,
+    #7deba0 29.82%,
+    #5ce688 51.94%,
+    #33cf50 90.29%
+  );
+}
+
+.bg-hero-gradient {
+    background: linear-gradient(
+      to bottom,
+      #ffffffaa 4.56%,
+      #000000d7 91.61%
+    );
+  }
+
+.bg-green-gradient1 {
+  background: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #006a00 91.61%
+  );
+}
+
+.bg-black-gradient-2 {
+  background: linear-gradient(
+    -168.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+}
+
+.bg-gray-gradient {
+  background: linear-gradient(
+    153.47deg,
+    rgba(255, 255, 255, 0) -341.94%,
+    #14101d 95.11%
+  );
+}
+
+.bg-discount-gradient {
+  background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
+}
+
+.box-shadow {
+  box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+}
+
+.sidebar {
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.feature-card:hover {
+  background: var(--black-gradient);
+  box-shadow: var(--card-shadow);
+}
+
+.feedback-container .feedback-card:last-child {
+  margin-right: 0px;
+}
+
+.feedback-card {
+  background: transparent;
+}
+
+.feedback-card:hover {
+  background: var(--black-gradient);
+}
+
+.services-card {
+  background: linear-gradient(
+      to bottom,
+      #ffffffaa 4.56%,
+      #000000d7 91.61%
+    );
+}
+
+.services-card:hover {
+  background: white;
+}
+
+.blue__gradient {
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+  filter: blur(123px);
+}
+
+.pink__gradient {
+  background: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
+  filter: blur(900px);
+}
+
+.white__gradient {
+  background: rgba(255, 255, 255, 0.6);
+  filter: blur(750px);
+}
+
+.listing {
+  width: 30%;
+  min-width: 300px;
+  max-width: 500px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 10px 0px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.listing::before {
+  content: "";
+  display: block;
+  padding-bottom: calc((2 / 4) * 100%);
+}
+
+.product_listing {
+  width: 30%;
+  min-width: 300px;
+  max-width: 450px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 10px 0px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.product_listing::before {
+  content: "";
+  display: block;
+  padding-bottom: calc((4 / 4) * 100%);
+}
+
+.productCard{
+  position: relative;
+  background-color: var(--color-grey-primary);
+  margin: 1rem;
+  flex: 1 0 25rem;
+  max-width: 400px;
+  max-height: 50rem;
+  transition: 0.2s;
+}
+
+.productCard__cart{
+  position: absolute;
+  right: 0;
+  margin: 1rem;
+  font-size: 2rem;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.productCard__fastSelling {
+  position: absolute;
+  font-size: 2rem;
+  left: 0;
+  margin: 1rem;
+  fill: var(--color-orange-primary);
+}
+
+.boxShadow {
+  box-shadow: inset 0 0 10px 0px;
+}
+
+.boxShadow2 {
+  box-shadow: 0 20px 50px;
+}
+
+.product_card_boxShadow {
+  box-shadow: 0 0 10px 0px;
+}
+
+
+.verifySignInBtn {
+  border: none;
+  outline: none;
+  padding: 12px 0;
+  background-color: rgb(23, 174, 159);
+  border-radius: 20px;
+  width: 180px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.image-background {
+  background-image: url('/src/assets/1255589-Fruits-Fruits-amp-Vegetables-Fruit-Vegetable.jpg');
+  object-fit: cover;
+}
+
+.blur_effect {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    pointer-events: none;
+}
+
+.blur_effect2 {
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(1px);
+  pointer-events: none;
+}
+
+
